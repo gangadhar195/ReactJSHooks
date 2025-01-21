@@ -1,14 +1,25 @@
 import React from 'react'
 import UseEffect from './ReactHooks/UseEffect'
 import UseState from './ReactHooks/UseState'
+import { ThemeProvider } from './ReactHooks/ThemeContext'
+import ThemeButton from './ReactHooks/ThemeButton'
+
 
 const App = () => {
   return (
-    <div>
-      {/* <UseEffect/> */}
-      <UseState/>
-    </div>
-  )
+    
+    <ThemeProvider>
+      <div>
+        <h1>Welcome to the Theme Swither App</h1>
+        <ThemeButton/>
+      </div>
+    </ThemeProvider>
+  //   <div>
+  //     {/* <UseEffect/> */}
+  //     {/* <UseState/> */}
+      
+  //   </div>
+   )
 }
 
 export default App
