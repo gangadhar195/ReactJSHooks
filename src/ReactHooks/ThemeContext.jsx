@@ -6,7 +6,7 @@ const ThemeProvider = ({children})=>{
 const [them,setThem] = useState("light")
 
 const toggleThem = ()=>{
-    setThem((prevThem)=>{prevThem=="light"?"dark":"light"})
+    setThem((prevThem)=>{prevThem==="light"?"dark":"light"})
 }
 return(
 

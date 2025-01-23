@@ -6,7 +6,7 @@ const ThemeButton = () => {
   return (
     <div>
       <button onClick={toggleThem}>
-        Switch {them=="light"?"dark":"light"} mode
+        Switch {them==="light"?"dark":"light"} mode
       </button>
     </div>
   )
